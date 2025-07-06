@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Teacher's Day Wishes</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #fff8f0;
+    }
+
+    .page {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-image: url('https://wallpaperaccess.com/full/39608.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 20px;
+    }
+
+    .card-container {
+      position: relative;
+      width: 600px;
+      height: 550px;
+      background: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=compress&cs=tinysrgb&w=1200') no-repeat center center/cover;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+    }
+
+    .lens-hover {
+      position: absolute;
+      top: 32%;
+      left: 27%;
+      width: 370px;
+      height: 370px;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.3);
+      transition: all 0.4s ease-in-out;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 3px solid #bfa8f7;
+      box-shadow: 0 0 15px rgba(168, 134, 255, 0.4);
+      opacity: 1;
+    }
+
+    .lens-hover:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+      transform: scale(1.03);
+    }
+
+    .invitation-text {
+      text-align: center;
+      font-size: 11px;
+      font-weight: normal;
+      color: #fff;
+      opacity: 0;
+      transition: opacity 0.4s ease-in-out;
+      line-height: 1.5;
+      padding: 20px;
+      text-shadow: 0 0 5px #c0afaf, 0 0 10px #ffe6fb; /* Sparkle effect */
+    }
+
+    .lens-hover:hover .invitation-text {
+      opacity: 1;
+    }
+
+    .title {
+      color: #9cd2ff;
+      font-family: 'Dancing Script', cursive;
+      font-size: 18px;
+      margin-bottom: 8px;
+      text-shadow: 0 0 6px #c0afaf, 0 0 12px #cce8ff;
+    }
+
+    .message {
+      font-size: 11px;
+      font-family: Cambria, serif;
+      color: #f5f5f5;
+    }
+
+    .from-student {
+      color: #ffc1d6;
+      font-family: Arial, sans-serif;
+      font-size: 10px;
+      margin-top: 10px;
+      text-shadow: 0 0 4px #c0afaf;
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+      .card-container {
+        width: 90vw;
+        height: 90vw;
+      }
+
+      .lens-hover {
+        width: 80vw;
+        height: 80vw;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .invitation-text {
+        font-size: 10px;
+        padding: 15px;
+      }
+
+      .title {
+        font-size: 16px;
+      }
+
+      .from-student {
+        font-size: 9px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="card-container">
+      <div class="lens-hover">
+        <div class="invitation-text">
+          <div class="title">Happy Teacher's Day Miss Namuna</div>
+          <div class="message">
+            With deep respect and heartfelt gratitude,<br>
+            I wish you a very Happy Teacher’s Day!<br><br>
+            I am truly grateful for the teachings, wisdom,<br>
+            and values you’ve shared with me.<br><br>
+            Your patience, inspiration, and kindness have<br>
+            made a lasting impact on my journey.<br><br>
+            Wishing you happiness, success, and<br>
+            fulfillment in all that you do.
+          </div>
+          <div class="from-student">– With best regards, <br>Your Student <br>Sudhan Rimal</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
